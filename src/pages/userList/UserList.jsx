@@ -19,7 +19,7 @@ export default function UserList() {
     fetch(`${apiURL}/select_all_students`)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data)
+        console.log('data....', data )
         setUsers(data.data)
       })
       .catch((err) => console.log(err));

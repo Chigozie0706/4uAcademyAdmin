@@ -2,6 +2,7 @@ import './clientList.css';
 import { DataGrid } from '@material-ui/data-grid';
 import { DeleteOutline } from '@material-ui/icons';
 import { useEffect, useState } from 'react';
+import { apiURL } from '../../api';
 
 export default function ClientList() {
   const [client, setClient] = useState([]);
@@ -11,7 +12,8 @@ export default function ClientList() {
   }, []);
 
   const getClient = () => {
-    fetch('https://fouruacademy-backend.onrender.com/api/select_all_clients')
+    fetch(`${apiURL}/select_all_clients`)
+    // fetch('https://fouruacademy-backend.onrender.com/api/select_all_clients')
       .then((res) => res.json())
 .then((data) => {
         console.log(data)
