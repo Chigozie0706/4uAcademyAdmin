@@ -9,7 +9,7 @@ const Login = () => {
     email: '',
     password: '',
   });
-  const [backendError, setBackendError] = useState([])
+  // const [backendError, setBackendError] = useState([])
   const [errors, setErrors] = useState({});
   const history = useHistory();
 

@@ -11,9 +11,12 @@ export default function ClientList() {
   }, []);
 
   const getClient = () => {
-    fetch('http://localhost:34567/api/get_client')
+    fetch('http://localhost:34567/api/select_all_clients')
       .then((res) => res.json())
-      .then((data) => setClient(data.results))
+.then((data) => {
+        console.log(data)
+        setClient(data.data)
+      })
       .catch((err) => console.log(err));
   };
 

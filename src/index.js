@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import Login from './pages/login/Login';
+// import Login from './pages/login/Login';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(

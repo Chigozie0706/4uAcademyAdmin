@@ -1,8 +1,8 @@
 
 import "./home.css";
-import { userData } from "../../dummyData";
+// import { userData } from "../../dummyData";
 
-import Login from "../login/Login";
+// import Login from "../login/Login";
 
 export default function Home() {
   return (

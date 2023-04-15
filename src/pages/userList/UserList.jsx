@@ -16,9 +16,12 @@ export default function UserList() {
   // };
 
   const getUser = () => {
-    fetch(`${apiURL}/get_users`)
+    fetch(`${apiURL}/select_all_students`)
       .then((res) => res.json())
-      .then((data) => setUsers(data.results))
+      .then((data) => {
+        console.log(data)
+        setUsers(data.data)
+      })
       .catch((err) => console.log(err));
   };
 

@@ -1,7 +1,10 @@
 import React from 'react';
 import './topbar.css';
 import logo from './logo.jpg';
-import { NotificationsNone, Language, Settings } from '@material-ui/icons';
+import { 
+  // NotificationsNone, 
+  // Language, 
+  Settings } from '@material-ui/icons';
 
 export default function Topbar() {
   return (
