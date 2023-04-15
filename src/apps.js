@@ -15,7 +15,7 @@ function Apps() {
       <div className="container">
         <Sidebar />
         <Switch>
-          <Route exact path="/users">
+          <Route exact path="/">
             <UserList />
           </Route>
           {/* <Route path="/users">

@@ -11,7 +11,7 @@ export default function ClientList() {
   }, []);
 
   const getClient = () => {
-    fetch('http://localhost:34567/api/select_all_clients')
+    fetch('https://fouruacademy-backend.onrender.com/api/select_all_clients')
       .then((res) => res.json())
 .then((data) => {
         console.log(data)
