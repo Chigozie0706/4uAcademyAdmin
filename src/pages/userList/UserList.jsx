@@ -20,7 +20,7 @@ export default function UserList() {
       .then((res) => res.json())
       .then((data) => {
         console.log('data....', data )
-        setUsers(data.data)
+        setUsers(data.data1)
       })
       .catch((err) => console.log(err));
   };

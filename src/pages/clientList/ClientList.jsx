@@ -17,7 +17,7 @@ export default function ClientList() {
       .then((res) => res.json())
 .then((data) => {
         console.log(data)
-        setClient(data.data)
+        setClient(data.data1)
       })
       .catch((err) => console.log(err));
   };
