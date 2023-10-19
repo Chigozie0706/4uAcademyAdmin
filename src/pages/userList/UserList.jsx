@@ -74,6 +74,11 @@ export default function UserList() {
       headerName: ' DOB',
       width: 160,
     },
+     {
+      field: 'course',
+      headerName: 'Course',
+      width: 200,
+    },
     {
       field: 'action',
       headerName: 'Action',
